@@ -1,3 +1,3 @@
 # python-metal-benchmark
 
-Visit here to see usage: https://github.com/noppoMan/python-metal-benchmark/blob/master/Python%20meets%20MacOSXMetal.ipynb
+Visit here to see usage: https://noppoman.github.io/python-metal-benchmark/Python-meets-Metal-API-on-OSX.html
