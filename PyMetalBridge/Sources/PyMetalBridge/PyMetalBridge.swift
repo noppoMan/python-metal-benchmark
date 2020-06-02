@@ -1,8 +1,9 @@
 import Metal
 import MetalPerformanceShaders
 import Accelerate
+import Foundation
 
- let metallib =  "/Users/noppoman/WorkingPlace/program/math/deep-learning-swift/python-nn-with-swift-and-metal/PyMetalBridge/Sources/PyMetalBridge/Shaders.metallib"
+let metallib =  "\(#file.replacingOccurrences(of: "/PyMetalBridge.swift", with: ""))/Shaders.metallib"
 
  @available(macOS 10.13, *)
  let device = MTLCreateSystemDefaultDevice()!,
