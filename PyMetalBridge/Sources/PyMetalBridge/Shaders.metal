@@ -24,9 +24,9 @@ kernel void maclaurin_cos(const device float *inVector [[ buffer(0) ]],
     float approximate = 0;
     for(int i = 0; i < 10; i++) {
         float x = inVector[id];
-        float coef = pow(float(-1), i);
-        int num = pow(x, 2*i);
-        int denom = factorial(2*i);
+        float coef = pow(float(-1.0f, i);
+        int num = pow(x, 2.0f*i);
+        int denom = factorial(2.0f*i);
         approximate += coef * (num/denom);
         i++;
     }
@@ -36,7 +36,7 @@ kernel void maclaurin_cos(const device float *inVector [[ buffer(0) ]],
 inline float f(const float x) {
     float approximate = 0;
     for(int coeff = 1; coeff < 100; coeff+=2) {
-        approximate += ((float)1/coeff)*sin(coeff*x);
+        approximate += (1.0f/coeff)*sin(coeff*x);
     }
     return approximate;
 }
